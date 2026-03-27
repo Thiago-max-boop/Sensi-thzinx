@@ -1,0 +1,9 @@
+function liberarVIP() {
+  const uid = document.getElementById("uid").value;
+
+  db.collection("users").doc(uid).update({
+    vip: true
+  });
+
+  alert("VIP ATIVADO ⚡");
+}
